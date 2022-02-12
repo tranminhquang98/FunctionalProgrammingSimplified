@@ -3,4 +3,6 @@
  */
 object FirstProgram extends App {
   println("Hello, World!")
+
+  def double: Int => Int = _ * 2
 }
