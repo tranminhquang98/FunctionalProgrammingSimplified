@@ -7,4 +7,8 @@ class FirstProgramTest extends FunSuite {
   test("FirstProgram.double") {
     assert(FirstProgram.double(2) == 4)
   }
+
+  test("FirstProgram.factorial") {
+    assert(FirstProgram.factorial(4, 1) == 24)
+  }
 }
