@@ -6,6 +6,8 @@ object FirstProgram extends App {
 
   def double: Int => Int = _ * 2
 
+  def isEven: Int => Boolean = _ % 2 == 0
+
   def factorial: (Long, Long) => Long = (n, acc) =>
     if (n == 1 || n == 0) acc
     else factorial(n - 1, n * acc)

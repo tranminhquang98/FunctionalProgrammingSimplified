@@ -11,4 +11,8 @@ class FirstProgramTest extends FunSuite {
   test("FirstProgram.factorial") {
     assert(FirstProgram.factorial(4, 1) == 24)
   }
+
+  test("FirstProgram.isEven") {
+    assert(!FirstProgram.isEven(3))
+  }
 }
