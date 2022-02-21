@@ -15,4 +15,8 @@ class FirstProgramTest extends FunSuite {
   test("FirstProgram.isEven") {
     assert(!FirstProgram.isEven(3))
   }
+
+  test("FunctionsAreVariables.function") {
+    assert(FunctionsAreVariables.function("2x")(5) == 10)
+  }
 }
