@@ -7,13 +7,9 @@ object HOF extends App {
 
   sayHello(helloQuang)
 
-  def sayHello(callback: () => Unit): Unit = {
-    callback()
-  }
+  def sayHello(callback: () => Unit): Unit = callback()
 
-  def helloQuang(): Unit = {
-    println("Hello, Quang")
-  }
+  def helloQuang(): Unit = println("Hello, Quang")
 
   sayHello2(helloQuang2)
 }
