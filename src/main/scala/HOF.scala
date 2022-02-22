@@ -8,8 +8,9 @@ object HOF extends App {
 
   sayHello(helloQuang)
 
-  val sayHello2: (() => Unit) => Unit = f => f()
-  val helloQuang2: () => Unit = () => println("Hello, Quang2")
+  def sayHello2: (() => Unit) => Unit = f => f()
+
+  def helloQuang2: () => Unit = () => println("Hello, Quang2")
 
   sayHello2(helloQuang2)
 }
