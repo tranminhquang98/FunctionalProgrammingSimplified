@@ -19,4 +19,9 @@ class FirstProgramTest extends FunSuite {
   test("FunctionsAreVariables.function") {
     assert(FunctionsAreVariables.function("2x")(5) == 10)
   }
+
+  test("SumFunction.sum") {
+    assert(SumFunction.sum(Nil) == 0)
+    assert(SumFunction.sum(List(1, 2, 3, 4)) == 10)
+  }
 }
