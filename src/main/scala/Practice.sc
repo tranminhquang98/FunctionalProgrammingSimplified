@@ -24,8 +24,9 @@ aa match {
   case a(n, a) => println(n, a)
 }
 /** ******************************* */
-val foo = "foo".map(List(_)).flatten
-val cc = List(foo: _*)
+val foo = "foo".map(List(_))
+val listFoo = List(foo: _*)
+val flatten = listFoo.flatten
 val foo2 = "foo".split("").toList
 /** ******************************* */
 def returnIntandString(): (Int, String) = {
